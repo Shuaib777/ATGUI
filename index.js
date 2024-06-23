@@ -6,12 +6,15 @@ let signupSwitch = document.querySelector(".signup-switch");
 let signupModal = document.querySelector(".signup-modal");
 let signinModal = document.querySelector(".signin-modal");
 let formButtons = document.querySelectorAll(".form-buttons");
-let accountActions = document.querySelector(".account-actions");
+let accountActionsButton = document.querySelector(".account-actions-button");
 let accountUser = document.querySelector(".account-user");
 let recommendation = document.querySelector(".recommendation");
 let posts = document.querySelectorAll(".post");
 
 accountButton.addEventListener("click", () => {
+  modalWrapper.style.display = "flex";
+});
+accountActionsButton.addEventListener("click", () => {
   modalWrapper.style.display = "flex";
 });
 
@@ -34,7 +37,8 @@ signupSwitch.addEventListener("click", () => {
 formButtons.forEach((formButton) =>
   formButton.addEventListener("click", () => {
     modalWrapper.style.display = "none";
-    accountActions.style.display = "none";
+    accountButton.style.display = "none";
+    accountActionsButton.style.display = "none";
     accountUser.style.display = "flex";
     recommendation.style.display = "flex";
   })

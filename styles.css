@@ -768,6 +768,11 @@ main {
     font-size: 12px;
   }
 
+  .account-user p,
+  .down-image {
+    display: none;
+  }
+
   .banner {
     overflow: hidden;
   }
