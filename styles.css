@@ -77,6 +77,10 @@ header {
   cursor: pointer;
 }
 
+.account-actions-button {
+  display: none;
+}
+
 .account-user {
   display: none;
   gap: 12px;
@@ -749,6 +753,19 @@ main {
 
   .search-bar {
     display: none;
+  }
+
+  .account-actions {
+    display: none;
+  }
+
+  .account-actions-button {
+    display: inline-block;
+    color: white;
+    background-color: var(--blue);
+    padding: 12px 15px;
+    border-radius: 21px;
+    font-size: 12px;
   }
 
   .banner {
